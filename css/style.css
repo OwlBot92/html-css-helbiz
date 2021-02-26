@@ -107,9 +107,11 @@ nav li:last-child a{
 .product-section img{
     max-width: 100%
 }
+
 .col-padding{
     padding: 10px 20px;
 }
+
 .content{
     text-align: center;
     background-color: #fafafa;
@@ -123,6 +125,7 @@ nav li:last-child a{
     font-weight: 600;
     margin-bottom: 5px;
 }
+
 .content a{
     text-decoration: none;
     color: blue;
@@ -145,7 +148,8 @@ nav li:last-child a{
 /* ----- media queries ----- */
 
 /* DESKTOP */
-@media screen and (min-width: 992px){
+@media screen and (min-width: 991px){
+
 }
 
 /* TABLET */
