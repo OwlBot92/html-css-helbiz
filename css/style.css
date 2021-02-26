@@ -41,7 +41,6 @@ nav ul li a{
 nav li:last-child a{
     border: none;
 }
-
 /* burger tri bars */
 /* è un esperimento */
 .burger{
@@ -68,8 +67,6 @@ nav li:last-child a{
 /* FINE NAV */
 
 
-
-
 /* JUMBOTRON style */
 .jumbotron{
     background-image: url("../img/hero-bg.jpg");
@@ -87,7 +84,6 @@ nav li:last-child a{
     color: white;
     text-align: center;
 }
-
 .jumbotron-content h1{
     font-size: 40px;
     font-weight: 600;
@@ -97,6 +93,12 @@ nav li:last-child a{
     font-weight: 600;
     padding: 20px 0;
 }
+/* FINE JUMBOTRON */
+
+
+
+
+/* ----- MAIN ----- */
 
 
 
@@ -105,6 +107,14 @@ nav li:last-child a{
 
 
 
+
+
+
+
+
+
+
+/* ----- media queries ----- */
 
 /* DESKTOP */
 @media screen and (min-width: 992px){
@@ -129,7 +139,6 @@ nav li:last-child a{
     }
 
 }
-
 
 /* SMARTPHONE */
 @media screen and (max-width: 767px){
