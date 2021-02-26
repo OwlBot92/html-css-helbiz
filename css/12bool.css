@@ -1,0 +1,298 @@
+/* DEBUG */
+.debug .container{
+    background-color: blueviolet;
+    height: 130px;
+}
+.debug [class*="col-"] > .container {
+    background-color: blueviolet;
+    height: 100%;
+}
+
+
+
+
+/* FRAMEWORK */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[class*="col-"]{
+    float: left;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* clearfix */
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px){
+    /* LARGE display Columns */
+    .col-large-1{
+        width: calc( (100% / 12) * 1);
+    }
+    .col-large-2{
+        width: calc( (100% / 12) * 2);
+    }
+    .col-large-3{
+        width: calc( (100% / 12) * 3);
+    }
+    .col-large-4{
+        width: calc( (100% / 12) * 4);
+    }
+    .col-large-5{
+        width: calc( (100% / 12) * 5);
+    }
+    .col-large-6{
+        width: calc( (100% / 12) * 6);
+    }
+    .col-large-7{
+        width: calc( (100% / 12) * 7);
+    }
+    .col-large-8{
+        width: calc( (100% / 12) * 8);
+    }
+    .col-large-9{
+        width: calc( (100% / 12) * 9);
+    }
+    .col-large-10{
+        width: calc( (100% / 12) * 10);
+    }
+    .col-large-11{
+        width: calc( (100% / 12) * 11);
+    }
+    .col-large-12{
+        width: calc( (100% / 12) * 12);
+    }
+    /* hidden */
+    .col-large-hidden{
+        display: none;
+    }
+
+    /* LARGE display MARGINS */
+    .offset-large-1{
+        margin-left: calc( (100% / 12) * 1);
+    }
+    .offset-large-2{
+        margin-left: calc( (100% / 12) * 2);
+    }
+    .offset-large-3{
+        margin-left: calc( (100% / 12) * 3);
+    }
+    .offset-large-4{
+        margin-left: calc( (100% / 12) * 4);
+    }
+    .offset-large-5{
+        margin-left: calc( (100% / 12) * 5);
+    }
+    .offset-large-6{
+        margin-left: calc( (100% / 12) * 6);
+    }
+    .offset-large-7{
+        margin-left: calc( (100% / 12) * 7);
+    }
+    .offset-large-8{
+        margin-left: calc( (100% / 12) * 8);
+    }
+    .offset-large-9{
+        margin-left: calc( (100% / 12) * 9);
+    }
+    .offset-large-10{
+        margin-left: calc( (100% / 12) * 10);
+    }
+    .offset-large-11{
+        margin-left: calc( (100% / 12) * 11);
+    }
+    .offset-large-12{
+        margin-left: calc( (100% / 12) * 12);
+    }
+    /* hidden */
+    .offset-largeidden{
+        display: none;
+    }
+
+}
+
+
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .col-med-1{
+        width: calc( (100% / 12) * 1);
+    }
+    .col-med-2{
+        width: calc( (100% / 12) * 2);
+    }
+    .col-med-3{
+        width: calc( (100% / 12) * 3);
+    }
+    .col-med-4{
+        width: calc( (100% / 12) * 4);
+    }
+    .col-med-5{
+        width: calc( (100% / 12) * 5);
+    }
+    .col-med-6{
+        width: calc( (100% / 12) * 6);
+    }
+    .col-med-7{
+        width: calc( (100% / 12) * 7);
+    }
+    .col-med-8{
+        width: calc( (100% / 12) * 8);
+    }
+    .col-med-9{
+        width: calc( (100% / 12) * 9);
+    }
+    .col-med-10{
+        width: calc( (100% / 12) * 10);
+    }
+    .col-med-11{
+        width: calc( (100% / 12) * 11);
+    }
+    .col-med-12{
+        width: calc( (100% / 12) * 12);
+    }
+
+    /* hidden */
+    .col-med-hidden{
+        display: none;
+    }
+
+    /* TABLET display MARGINS */
+    .offset-med-1{
+        margin-left: calc( (100% / 12) * 1);
+    }
+    .offset-med-2{
+        margin-left: calc( (100% / 12) * 2);
+    }
+    .offset-med-3{
+        margin-left: calc( (100% / 12) * 3);
+    }
+    .offset-med-4{
+        margin-left: calc( (100% / 12) * 4);
+    }
+    .offset-med-5{
+        margin-left: calc( (100% / 12) * 5);
+    }
+    .offset-med-6{
+        margin-left: calc( (100% / 12) * 6);
+    }
+    .offset-med-7{
+        margin-left: calc( (100% / 12) * 7);
+    }
+    .offset-med-8{
+        margin-left: calc( (100% / 12) * 8);
+    }
+    .offset-med-9{
+        margin-left: calc( (100% / 12) * 9);
+    }
+    .offset-med-10{
+        margin-left: calc( (100% / 12) * 10);
+    }
+    .offset-med-11{
+        margin-left: calc( (100% / 12) * 11);
+    }
+    .offset-med-12{
+        margin-left: calc( (100% / 12) * 12);
+    }
+}
+
+
+
+
+/* SMARTPHONE */
+/* IMPORTANTE: LO SPAZIO DOPO AND */
+@media screen and (max-width: 767px){
+    /* SMALL display width */
+    .col-small-1{
+        width: calc( (100% / 12) * 1);
+    }
+    .col-small-2{
+        width: calc( (100% / 12) * 2);
+    }
+    .col-small-3{
+        width: calc( (100% / 12) * 3);
+    }
+    .col-small-4{
+        width: calc( (100% / 12) * 4);
+    }
+    .col-small-5{
+        width: calc( (100% / 12) * 5);
+    }
+    .col-small-6{
+        width: calc( (100% / 12) * 6);
+    }
+    .col-small-7{
+        width: calc( (100% / 12) * 7);
+    }
+    .col-small-8{
+        width: calc( (100% / 12) * 8);
+    }
+    .col-small-9{
+        width: calc( (100% / 12) * 9);
+    }
+    .col-small-10{
+        width: calc( (100% / 12) * 10);
+    }
+    .col-small-11{
+        width: calc( (100% / 12) * 11);
+    }
+    .col-small-12{
+        width: calc( (100% / 12) * 12);
+    }
+
+    /* hidden */
+    .col-small-hidden{
+        display: none;
+    }
+
+
+    /* SMARTPHONE display MARGINS */
+    .offset-small-1{
+        margin-left: calc( (100% / 12) * 1);
+    }
+    .offset-small-2{
+        margin-left: calc( (100% / 12) * 2);
+    }
+    .offset-small-3{
+        margin-left: calc( (100% / 12) * 3);
+    }
+    .offset-small-4{
+        margin-left: calc( (100% / 12) * 4);
+    }
+    .offset-small-5{
+        margin-left: calc( (100% / 12) * 5);
+    }
+    .offset-small-6{
+        margin-left: calc( (100% / 12) * 6);
+    }
+    .offset-small-7{
+        margin-left: calc( (100% / 12) * 7);
+    }
+    .offset-small-8{
+        margin-left: calc( (100% / 12) * 8);
+    }
+    .offset-small-9{
+        margin-left: calc( (100% / 12) * 9);
+    }
+    .offset-small-10{
+        margin-left: calc( (100% / 12) * 10);
+    }
+    .offset-small-11{
+        margin-left: calc( (100% / 12) * 11);
+    }
+    .offset-small-12{
+        margin-left: calc( (100% / 12) * 12);
+    }
+}
+
