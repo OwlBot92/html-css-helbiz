@@ -68,6 +68,7 @@ nav li:last-child a{
 
 
 /* JUMBOTRON style */
+
 .jumbotron{
     background-image: url("../img/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -99,8 +100,35 @@ nav li:last-child a{
 
 
 /* ----- MAIN ----- */
-
-
+.product-section{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.product-section img{
+    max-width: 100%
+}
+.col-padding{
+    padding: 10px 20px;
+}
+.content{
+    text-align: center;
+    background-color: #fafafa;
+}
+.content .product-logo{
+    padding: 30px 0 20px 0;
+    height: 70px;
+}
+.content p{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.content a{
+    text-decoration: none;
+    color: blue;
+    font-size: 14px;
+}
+    
 
 
 
@@ -138,6 +166,12 @@ nav li:last-child a{
         padding: 19px 0;
     }
 
+
+    /* product section styling */
+    .col-padding{
+        padding: 10px 160px;
+    }
+
 }
 
 /* SMARTPHONE */
@@ -156,5 +190,10 @@ nav li:last-child a{
         font-size: 11px;
         font-weight: 600;
         padding: 17px 0;
+    }
+
+    /* product section styling */
+    .col-padding{
+        padding: 10px 80px;
     }
 }
