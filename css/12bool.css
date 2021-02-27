@@ -212,7 +212,7 @@
 
 /* SMARTPHONE */
 /* IMPORTANTE: LO SPAZIO DOPO AND */
-@media screen and (max-width: 768px){ /* ho messo 768 perchè con 767 si rompeva il layout */
+@media screen and (max-width: 767px){ 
     /* SMALL display width */
     .col-xs-1{
         width: calc( (100% / 12) * 1);
