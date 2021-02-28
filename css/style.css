@@ -1,5 +1,6 @@
-/* da correggere il bordo bianco a destra su schermi piccoli */
-
+/* LINEA 63 CSS: styling della burger menu   */
+/* LINEA 85 CSS: burger:hover effects   */
+/* LINEA 121-143 CSS: creazione effetti dello sliding menu */
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -7,6 +8,23 @@ body{
 /* ----- HEADER ----- */
 
 /* NAV */
+
+/* inizio modifiche prova */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+.jumbotron{
+    z-index: -1;
+    margin-top: 63px;
+}
+/* fine modifiche prova */
+
+
 .wrapper{
     width: 90%;
     margin: auto;
@@ -39,8 +57,9 @@ nav ul li a{
 nav li:last-child a{
     border: none;
 }
-/* burger tri bars */
-/* è un esperimento */
+
+/* BURGER QUADRIBAR da linea 75 HTML a 80*/
+/* esperimento */
 .burger{
     position: relative;
     height: 17px;
@@ -62,7 +81,106 @@ nav li:last-child a{
     bottom: 0;
     left: 0;
 }
+
+/* BURGER lines esperimento hover */
+/* il burger è composto da 4 linee: una in alto, due al centro sovrapposte (sembrano una sola linea) e una in basso */
+
+/* l'animazione tra le modifiche di posizione di ritorno alla posizione originale non è istantanea */
+.burger .line.upper,
+.burger .lin.lower{
+    transition: .4s;
+}
+/* quando in hover sul burger la linea di su e quella di giu scompaiono */
+.burger:hover .line.upper,
+.burger:hover .line.lower{
+    opacity: 0;
+    transition: .4s;
+}
+
+/* cross-right e cross-left sono le due linee sovrapposte */
+.cross-right,
+.cross-left{
+    /* quando non in hover tornano alla posizione di origine */
+    transform: rotate(0deg);
+    /* impiegandoci 0.4secondi */
+    transition: .4s;
+}
+/* quando in hover sul burger menu:  una linea ruota di 45gradi ...*/
+.burger:hover .cross-right{
+    transform: rotate(45deg);
+    transition: .5s;
+}
+/* ... e una ruota di -45gradi, ottenendo l'effetto ad X*/
+.burger:hover .cross-left{
+    transform: rotate(-45deg);
+    transition: .5s;
+}
+/* fine BURGER eserimento */
+
+
+/* sliding menu */
+/* è un input active, nascosto (display NONE) ma linkato col for al burger menu */
+.nav-toggle{
+    display: none;
+}
+/* da RIGA 91 HTML a 134*/
+.sliding-menu{
+    /* cosi occupa sempre il 100% della pagina visualizzata e si adatta in automatico a tablet e mobile */
+    height: 100vh;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    /* lo sliding menu è posizionato fuori dallo schermo, in alto */
+    transform: translateY(-110vh);
+    transition: transform .7s ease-in-out;
+    z-index: 15;
+}
+/* quando il checkbox è check la il "fratello" sliding menù cambia posizione e 'scende'*/
+.nav-toggle:checked ~ .sliding-menu{
+    transform: translateX(0);
+}
+
+/* styling elementi interni allo sliding menu (niente di particolare)*/
+.sliding-menu ul {
+    text-align: left;
+}
+.sliding-menu ul li a{
+    font-weight: 700;
+    text-transform: none;
+    font-size: 15px;
+}
+.sliding-menu .drop-down-nav{
+    background-color: #f7f7f7;
+    padding: 20px 0;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.sliding-menu .drop-down-items ul li,
+.sliding-menu .drop-down-footer ul li{
+    display: block;
+    padding: 15px 0;
+}
+
+.sliding-menu .drop-down-footer ul{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.drop-down-lang img{
+    width: 50px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.drop-down-lang span{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+
 /* FINE NAV */
+
+
 
 
 /* JUMBOTRON style */
