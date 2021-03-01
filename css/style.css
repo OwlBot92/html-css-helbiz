@@ -137,7 +137,8 @@ nav li:last-child a{
 }
 /* quando il checkbox è check la il "fratello" sliding menù cambia posizione e 'scende'*/
 .nav-toggle:checked ~ .sliding-menu{
-    transform: translateX(0);
+    /* scende dall alto nella posizione che occuperebbe senza translateY -110vh */
+    transform: translateY(0);
 }
 
 /* styling elementi interni allo sliding menu (niente di particolare)*/
